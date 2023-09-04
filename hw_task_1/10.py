@@ -4,3 +4,5 @@ for number in range(len(lst)):
     lst[number] *= number
     print(lst)
 
+
+
