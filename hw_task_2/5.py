@@ -1,7 +1,13 @@
-n = 20 #Кол-во кубиков
-def function(n):
-    count = n - 3 #Кол-во лесенок
+def get_count(prev_level, n):
+    if n == 0:
+        return 1
+    count = 0
+    for level in range(1, prev_level):
+        if n - level < 0:
+            break
+        count += get_count(level, n - level)
     return count
 
-print(function(n))
 
+n = int(input())
+print(get_count(n + 1, n))
