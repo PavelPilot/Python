@@ -1,19 +1,15 @@
 def check(f):
     def result(x):
         r = f(x)
+        if type(r) != int:
+            raise Exception('Проверьте тип данных')
 
-    try:
-        x.type = int
-    except:
-        print('Тип данных не целочисленный')
-    return r
-return(result)
+        return r
+    return(result)
 
 @check
 def square(x):
-    return x ** 2
-
-
+    return x
 
 print(square(5))
 
