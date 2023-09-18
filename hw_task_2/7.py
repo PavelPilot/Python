@@ -8,8 +8,6 @@ def check(f):
             f(x)
 
 
-
-
         return r
     return(result)
 
