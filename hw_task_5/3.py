@@ -17,4 +17,9 @@ apple = pd.DataFrame({
 }).set_index('id')
 
 
-print(apple.mean())
+print((apple.mean()).mean())
+# apple.to_csv('apple.csv')
+# print(len(apple[0])*len(apple['id']))
+print(apple)
+apple.to_csv('apple.csv')
+
