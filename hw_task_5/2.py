@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 apple = pd.DataFrame({
-    'id' : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+    'id' : ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'],
     'Column_1': [2015, 2017, 2018, 2019, 2027, 2035, 2040, 2050, 2525, 2121],
     'Column_2': [129, 128, 128, 118, 117, 116, 125, 125, 123, 147],
     'Column_3': [129, 128, 128, 118, 117, 116, 125, 125, 123, 147],
@@ -16,4 +16,4 @@ apple = pd.DataFrame({
 
 }).set_index('id')
 
-print(apple)
+print(apple[apple > 5])
